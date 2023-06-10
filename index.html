@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>crud application</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="title text-white-50 text-center py-4 text-uppercase fs-1">
+    <h1>crud application</h1>
+  </div>
+
+  <div class="product-crud p-5 mb-5 w-75 m-auto">
+    <label>product name</label>
+    <input id="productName" type="text" class="form-control">
+    <div id="nameAlert" class="alert-danger p-2 my-2 d-none">
+      name should start with capital letter<br>
+      name should not have any numbers <br>
+      name should have at least 3 letters
+    </div>
+
+    <label>product price</label>
+    <input id="productPrice" type="number" class="form-control">
+    <div id="priceAlert" class="alert-danger p-2 my-2 d-none">
+      should be more than 1 digit
+    </div>
+
+    <label>product category</label>
+    <input id="productCategory" type="text" class="form-control">
+    <div id="categoryAlert" class="alert-danger p-2 my-2 d-none">
+      category should start with capital letter<br>
+      can contain a digits<br>
+      should be more than 3 letters
+    </div>
+
+    <label>product description</label>
+    <textarea id="productDesc" class="form-control"></textarea>
+
+    <button id="addBtn" class="btn btn-danger my-3 float-end" disabled>add button</button>
+    <div class="clearfix"></div>
+
+    <input id="searchInput" type="text" placeholder="searsh with name ...." class="form-control my-3">
+
+
+    <table class="table">
+      <thead>
+        <th>name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>desc</th>
+        <th></th>
+        <th></th>
+
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+
+  <script src="js/hello.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
